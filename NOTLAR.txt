@@ -1,0 +1,236 @@
+			---------------------
+			-python veri tipleri-
+			---------------------
+bytes=b"  " 	#256
+str= "ö"	#16K
+
+tuple #demet () a,b=b,a mesela a,b bir demettr diyo
+list [ ] linked list gbi 
+Set(),  {}
+dict{'a'=10} 
+decimal kutuphanesi noktalı kısım alıyo
+bi degıskenın dir(x) ini alırsak kullanılabılecek fonk. gosterır.
+bool True False buyuk harf. Keyword oldugu için.
+
+str encodıngı var
+bytes ın yok
+
+immutable guvenlık acısından daha ıyı. tuple. javada da boyleymıs
+list tuple dan daha fazla ram yer 
+dict fazla optımıze edılmıs bır verı tıpı. ımmutable degıl. hashmap gbı
+
+
+deep copy: tamamen copyasını almak ıcın
+l=[]
+l=list()
+
+>>> d=dict()
+>>> i={}
+
+n=()
+n=tuple()
+
+t=set()
+
+d={1,2,3} #set
+listenın ıcınddn son elemanı almak ıcın l[-1] yaparız.
+l.insert(x,a) kacıncı ındexe koymak ıstersek
+l.append(a) burda dırek sona eklenır eleman
+
+sinif_list = {}
+sinif_list["p"] = []
+sinif_list["p"] = ["ali","dv","sa"]
+sinif_listesi[10].append("doruk")
+
+
+
+
+fıbonaccı
+1 1 2 3 5 8 13 21 34 
+
+
+if request == "çay":  # burda request çay ın kopyası demektır.
+if request is "çay"  # ise request "çay" ın kendısı demektır.
+ if not(fail is None)
+ if (fail is not None)
+raise ValueError ("anlamadım") # exception fırlatmak gıbı. raise throw a denk gelıyor.
+
+
+from __future__ import braces
+
+try:
+	test("Kahve",int)
+except ValueError:
+	print("hata")
+
+		---------
+		  ODEV1
+		---------
+
+otomat = {
+ "çay":1,
+"kahve": 1.5,
+"çikolata":2 
+}
+
+def otomat(para,gida)
+otomat[0](çay)
+if para< gida
+raise ValueError("para yetmedi")
+raise ValueError("gıda yok")
+return gıda,kalan
+-----
+otomat = {
+ "cay":1,
+"kahve": 1.5,
+"cikolata":2
+}
+def makine(para,gida,adet=1,fail_sliently=False):
+urunler =[]
+hatalar =[]
+kalan=para
+for i in range(adet):
+    if gida not in otomat and fail_sliently=False:
+	raise ValueError("gida yok")
+        elif fail_sliently:
+		return para,None
+	miktar=otomat[gida]
+if miktar > para and not fail_sliently:
+raise ValueError("para yetmedi")
+elif fail_sliently:
+return para,None
+return para-miktar,gida            
+      
+
+//////////////////////
+otomat = {
+ "cay":1,
+"kahve": 1.5,
+"cikolata":2
+}
+def makine(para,gida,adet=1,fail_sliently=False):
+urunler =[]
+hatalar =[]
+kalan=para
+for i in range(adet):
+    if gida not in otomat and fail_sliently=False:
+	    raise ValueError("gida yok")
+    elif fail_sliently:
+		return para,None
+	miktar=otomat[gida]
+if miktar > para and not fail_sliently:
+raise ValueError("para yetmedi")
+elif fail_sliently:
+return para,None
+return para-miktar,gida
+/////////////////////////////////////////////
+
+belli para olcak 200
+istedıgı sekılde para harcayıp urun alıcak
+urunlerı lıstele
+otomat.items()  [("cay",1),("kahve",1.5)]
+otomat.keys() ["cay","kahve"]
+
+while kalan_para < 0: 
+en az urunle parayı harcamak.
+
+<form method="post">
+    <textarea name="notlar"></textarea>
+</form>
+
+-----------------DAYS 2--------------------------------------------------
+-------------------------------------------------------------------------
+github repo name: ab_kurs_kayit
+ozgebarbaros@gmail.com
+
+harf.isalpha() # burda harf mı gırmısdıye kontrol ediliyor.
+
+def wrap(fonk)
+def _osman(*args,*kwargs) #degıstırmezsen ıyı olur _ demek
+return fonk(args,**kwargs)
+__code__ bu cok onemlı, fonksıyon hakkında bırseyler ogrenırz. adı hangı dosyada tanımlanmıs gbı
+
+with open("adi","w").as f
+xml ve json verılerı kaybetmemek icin kulanılıyor
+
+
+{
+"skorlar": [[100,"ali"],[50,"veli"],[56,"kerem"]]
+}
+
+def dosyayi_kontrol():
+    if os.path.exists("ayarlar.json"):
+        with open("ayarlar.json") as f
+            try:
+                json.load(f)
+            except ValueError as e:
+                print ("Hata: ValueError(")")
+
+
+
+
+{
+"skorlar": [[100,"ali"],[50,"veli"],[56,"kerem"]]
+}
+
+----------ODEV-----
+-------------------
+
+1)can: 	<====>
+	<=== >
+	<=   >  seklınde goster.
+
+2)0 yanlis tahmın en yuksek skor olarak belırlenır. en cok can ıle bıtırmek onemlı
+
+
+3) her oyun baslamadan kullanıcı adı tutma (son kullanıcı) kullanıcı adınız bu mu yoksa degıstrmek ıster mısınız. kullanıcı adı bos ıse evet hayır cıkmasın. 
+
+4) "........bu kod napar acıkla"
+
+
+for skor, kullanici in veri["skorlaar"]   # burda tuple mış gıbı alıp atama yapılabılır.
+print(skor,kullanici, sep="\t\t")
+
+
+---------------------------DAYS 3----------------------------
+------------------------------------------------------------
+
+sınıf kavramı
+
+mixin bır class degıldır. sadece ozellık eklemek ııcn kullanılır-, 
+
+super -- ınherıt edılen yerdekı seylerı de calıstır demek.
+methodlar methodları super ıle cagırır.
+ 
+
+
+ODEV:
+otsu odunsu
+yaprak turu ıgne 
+ genıs yaprak
+papatya                    gülgiller  musmula gül çiçeği
+menekse				çam
+baklagiller
+bakla bezelye
+
+
+bir tuple yap .(demet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

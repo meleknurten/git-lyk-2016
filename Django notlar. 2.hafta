@@ -1,0 +1,86 @@
+ORM : sql injection yapılması zorlasıyor bunu kullandıgımızda. sql i basit bı sekılde yorumluyor.
+
+GEODjango = swarm mesela, locatıon bazlı uygulamalar
+Internationalization (i18n) = bır seyı yerel dıllere uyarlamak demek. 
+
+
+virtualenv fblog
+cd fblog 
+source bin/activate  : mesela bısı kurarken buraya kurduklarımız tum pc ye kurdugumuz sey degıldir.
+
+deactivate dersek vırtualenv dan cıkariz 
+ python manage.py startapp places
+
+pirasa nın altındakı dosyalar:
+urls.py
+blog 
+__init__.py 
+models.py
+tests.py
+views.py
+
+view python kodudur
+template html kodudur
+Model:
+
+django-admin startproject velespi
+Temel komutlar
+
+python manage.py makemigrations
+
+makemigrations ile veritabanı senkronizasyonu için migration dosyaları oluşturulur.
+
+python manage.py migrate
+
+migrate komutu ile migration'lar veritabanında uygulanır.
+
+python manage.py createsuperuser
+
+Bir süper kullanıcı oluşturulur.
+
+python manage.py runserver
+
+runserver ile development sunucusu başlatılır.
+
+View kullanıcının karsılandıgı ve ona yanıt verdıgı katmandır.
+functıon base yazıcaz.
+Template
+--------
+home altına env , buraya vırtual 
+home altına da proje kur django kur
+
+templateler html kodu uretmeyı kolaylastırır
+
+view ve url nedir .
+
+HTML
+ <article>
+
+ </article> 
+ <footer>
+
+ </footer>
+
+
+Django console
+--------------
+from blog.models import Post
+Post.object.count()
+Post.objects.create(title="hey", body="hop",is_published=True)
+post= Post.objects.get(id=1)
+post.save()
+post.delete()
+
+Genel Izleyıcı = twıtter apı kullanan bı uygulama
+
+
+
+
+
+
+
+
+
+
+
+
